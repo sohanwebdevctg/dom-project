@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double and triple</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="bg-cyan-600 w-9/12 mx-auto mt-8 p-10 rounded-lg">
+        <section class="grid grid-cols-2 gap-4 mt-8 text-center">
+            <div class="bg-rose-700 p-5 rounded-lg">
+                <h4 class="text-xl font-medium pb-3">convert double value</h4>
+                <div class="bg-blue-700 p-5 rounded-lg mb-5">
+                    <h3 class="text-white text-2xl font-bold">Double Value</h3>
+                    <p class="text-white text-4xl">$<span id="preDoubleValue">00</span></p>
+                </div>
+                <div>
+                    <input id="newDoubleValue" type="text" placeholder="$ please enter your value" class="w-full text-center block mb-5 py-3 pl-2">
+                    <button id="doubleBtn" class="bg-zinc-800 text-white py-3 px-5 text-xl rounded-lg font-bold hover:bg-slate-600">click</button>
+                </div>
+            </div>
+            <div class="bg-rose-700 p-5 rounded-lg">
+                <h4 class="text-xl font-medium pb-3">convert triple value</h4>
+                <div class="bg-blue-700	 p-5 rounded-lg mb-5">
+                    <h3 class="text-white text-2xl font-bold">Triple Value</h3>
+                    <p class="text-white text-4xl">$<span id="preTripleValue">00</span></p>
+                </div>
+                <div>
+                    <input id="newTripleValue" type="text" placeholder="$ please enter your value" class="w-full text-center block mb-5 py-3 pl-2">
+                    <button id="tripleBtn" class="bg-zinc-800 text-white py-3 px-5 text-xl rounded-lg font-bold hover:bg-slate-600">click</button>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <script src="./js/utitlities.js"></script>
+    <script src="./js/double.js"></script>
+    <script src="./js/triple.js"></script>
+
+</body>
+</html>

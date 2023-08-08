@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        ul{
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 50px !important;
+        }
+        ul li{
+            display: inline-block;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main class="bg-cyan-600 w-9/12 mx-auto mt-8 p-10 rounded-lg">
+        <!-- deposit withdraw and total amount -->
+        <section class="grid grid-cols">
+            <div class="bg-green-700 p-5 rounded-lg">
+                <ul>
+                    <li>
+                        <input type="number" id="number" onchange="f1()" value="16" min="1" max="100">
+                    </li>
+                    <li>
+                        <button onclick="f2()" style="font-weight: 700; font-size: 20px; background-color: papayawhip; padding: 8px 10px;border-radius: 10px;" type="button">B</button>
+                    </li>
+                    <li>
+                        <button onclick="f3()" style="font-weight: 700; font-size: 20px; background-color: rgb(185, 128, 35); padding: 8px 10px;border-radius: 10px; font-style: italic;" type="button">I</button>
+                    </li>
+                    <li>
+                        <button onclick="f4()" style="font-weight: 700; font-size: 20px; background-color: rgb(84, 209, 132); padding: 8px 10px;border-radius: 10px; text-decoration: underline;" type="button">U</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <button onclick="f5()" style="font-weight: 700; font-size: 20px; background-color: rgb(84, 209, 132); padding: 8px 10px;border-radius: 10px;" type="button">left</button>
+                    </li>
+                    <li>
+                        <button onclick="f6()" style="font-weight: 700; font-size: 20px; background-color: rgb(149, 84, 209); padding: 8px 10px;border-radius: 10px;" type="button">center</button>
+                    </li>
+                    <li>
+                        <button onclick="f7()" style="font-weight: 700; font-size: 20px; background-color: rgb(209, 84, 132); padding: 8px 10px;border-radius: 10px;" type="button">right</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <button onclick="f8()" style="font-weight: 700; font-size: 20px; background-color: rgb(84, 209, 132); padding: 8px 10px;border-radius: 10px;" type="button">Aa</button>
+                    </li>
+                    <li>
+                        <button onclick="f9()" style="font-weight: 700; font-size: 20px; background-color: rgb(209, 84, 84); padding: 8px 10px;border-radius: 10px;" type="button">aA</button>
+                    </li>
+                    <li>
+                        <button onclick="f10()" style="font-weight: 700; font-size: 20px; background-color: rgb(103, 84, 209); padding: 8px 10px;border-radius: 10px;" type="button">T</button>
+                    </li>
+                    <li>
+                        <input type="color" onchange="f11()" id="color">
+                    </li>
+                    <li>
+                        <input type="color" onchange="f12()" id="backgroundColor">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="grid grid-cols mt-8">
+            <div class="bg-yellow-400 p-5 rounded-lg">
+                <textarea id="textarea" style="width: 100%; height: 40vh;" placeholder="please write something"></textarea>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- adding javaScript file -->
+    <script src="./index.js"></script>
+
+</body>
+</html>

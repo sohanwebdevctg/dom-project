@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <!-- As a link -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+      </div>
+    </nav>
+    <div class="row mt-4">
+      <!-- card-section -->
+      <div class="col-8">
+        <div class="d-flex flex-wrap gap-4 justify-content-center">
+          <div class="card p-3 text-center" style="width: 18rem;">
+            <img src="./img/triangle.png" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h5>Triangle</h5>
+              <span>Area(A) = 0.5 X b X h</span>
+              <p class="mt-3">
+                <input type="text" placeholder="b-cm" class="w-25" id="t1">
+                <input type="text" placeholder="h-cm" class="w-25" id="t2">
+              </p>
+              <button class="btn btn-success w-100" id="tBtn">calculate</button>
+            </div>
+          </div>
+          <div class="card p-3 text-center" style="width: 18rem;">
+            <img src="./img/rectangle.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Rectangle</h5>
+              <span>Area(A) = W X I</span>
+              <p class="mt-3">
+                <input type="text" placeholder="w-cm" class="w-25" id="r1">
+                <input type="text" placeholder="i-cm" class="w-25" id="r2">
+              </p>
+              <button class="btn btn-success w-100" id="rBtn">calculate</button>
+            </div>
+          </div>
+          <div class="card p-3 text-center" style="width: 18rem;">
+            <img src="./img/parallelogram.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Parallelogram</h5>
+              <span>Area(A) = b X h</span>
+              <p class="mt-3">
+                <input type="text" placeholder="b-cm" class="w-25" id="p1">
+                <input type="text" placeholder="h-cm" class="w-25" id="p2">
+              </p>
+              <button class="btn btn-success w-100" id="pBtn">calculate</button>
+            </div>
+          </div>
+          <div class="card p-3 text-center" style="width: 18rem;">
+            <img src="./img/rhombus.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Rhombus</h5>
+              <span>Area(A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></span>
+              <p class="mt-3">
+                <input type="text" placeholder="d1-cm" class="w-25" id="rh1">
+                <input type="text" placeholder="d2-cm" class="w-25" id="rh2">
+              </p>
+              <button class="btn btn-success w-100" id="rhBtn">calculate</button>
+            </div>
+          </div>
+          <div class="card p-3 text-center" style="width: 18rem;">
+            <img src="./img/pentagon.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Pentagon</h5>
+              <span>Area(A) = 0.5 X p X b</span>
+              <p class="mt-3">
+                <input type="text" placeholder="p-cm" class="w-25" id="pe1">
+                <input type="text" placeholder="b-cm" class="w-25" id="pe2">
+              </p>
+              <button class="btn btn-success w-100" id="peBtn">calculate</button>
+            </div>
+          </div>
+          <div class="card p-3 text-center" style="width: 18rem;">
+            <img src="./img/ellipse.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Ellipse</h5>
+              <span>Area(A) =  πab</span>
+              <p class="mt-3">
+                <input type="text" placeholder="a-cm" class="w-25" id="e1">
+                <input type="text" placeholder="b-cm" class="w-25" id="e2">
+              </p>
+              <button class="btn btn-success w-100" id="eBtn">calculate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- calculate-section -->
+      <div class="col-4">
+        <div>
+          <div class="card" style="width: 20rem;">
+            <h3 class="text-center">calculate</h3>
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Button</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                  <!-- <tr>
+                    
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
